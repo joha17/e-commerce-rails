@@ -1,0 +1,15 @@
+<div class="center">
+  <div class="row">
+    <% @books.each do |book| %>
+    <div class="col-md-3 col-xs-6">
+      <div class="thumbnail" >
+         <%= link_to image_tag("Programación en java 6.jpg", class: "img-responsive aspect"), book %>
+            <div class="caption">
+              <h3><%=link_to book.name, book %></h3>
+              <p>Precio: $<%= book.price %></p>
+            </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
