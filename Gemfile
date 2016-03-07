@@ -37,9 +37,14 @@ gem 'dotenv-rails', groups: [:development]
 
 gem 'aws-sdk', '< 2.0 '
 
-gem 'friendly_id'
+gem 'friendly_id', '~> 5.1.0'
 
 gem 'therubyracer', '~> 0.12.2'
+
+gem 'stripe'
+
+gem 'aasm'
+
 
 
 
